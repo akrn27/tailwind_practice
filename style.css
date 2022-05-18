@@ -472,16 +472,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
-.w-16 {
-  width: 4rem;
+.h-32 {
+  height: 8rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .border {
   border-width: 1px;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .py-8 {
