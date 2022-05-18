@@ -6,8 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar TailwindCSS</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+            border: 1px solid red;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                spacing: {
+                    13: '3.25rem',
+                },
+            },
+          },
+        };
+      </script>
 </head>
 <body>
-    <h1 class="text-6xl">Mari Belajar Tailwind</h1>
+    <h1>Mari Belajar Tailwind</h1>
+
+    <section class="mb-10">
+        <h2>Spacing</h2>
+        <div class="m-13">Margin</div>
+        <div class="py-8">Padding</div>
+    </section>
+
+    <section class="mb-10">
+        <h2>Sizing</h2>
+        <div class="w-16">Kotak 1</div>
+    </section>
 </body>
 </html>
