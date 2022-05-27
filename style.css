@@ -730,6 +730,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 32rem;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
 .origin-top-left {
   transform-origin: top left;
 }
@@ -1019,8 +1023,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 100;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .italic {
   font-style: italic;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-slate-800 {
