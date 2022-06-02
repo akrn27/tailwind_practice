@@ -996,6 +996,10 @@ h1 {
   background-image: url('img/grid/1.jfif');
 }
 
+.bg-\[url\(\'img\/grid\/2\.jfif\'\)\] {
+  background-image: url('img/grid/2.jfif');
+}
+
 .from-blue-500 {
   --tw-gradient-from: #3b82f6;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(59 130 246 / 0));
