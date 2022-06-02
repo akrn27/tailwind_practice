@@ -502,6 +502,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+#toggle:checked ~ label div.toggle-circle {
+  --tw-translate-x: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -536,6 +541,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .float-left {
   float: left;
+}
+
+.m-13 {
+  margin: 3.25rem;
 }
 
 .m-auto {
@@ -754,6 +763,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@-webkit-keyframes goyang {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes goyang {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-goyang {
+  -webkit-animation: goyang 1s ease-in-out infinite;
+          animation: goyang 1s ease-in-out infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -862,6 +896,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-green-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
+.bg-kopi {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 255 238 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#bada55\] {
@@ -1066,6 +1105,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-center {
   text-align: center;
+}
+
+.font-inter {
+  font-family: Inter;
 }
 
 .font-serif {
@@ -1450,46 +1493,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   visibility: visible;
 }
 
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-slate-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-  }
+.dark .dark\:bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
 
-  .dark\:bg-slate-300 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-  }
+.dark .dark\:bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
 
-  .dark\:text-slate-200 {
-    --tw-text-opacity: 1;
-    color: rgb(226 232 240 / var(--tw-text-opacity));
-  }
+.dark .dark\:text-slate-200 {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
 
-  .dark\:text-slate-800 {
-    --tw-text-opacity: 1;
-    color: rgb(30 41 59 / var(--tw-text-opacity));
-  }
+.dark .dark\:text-slate-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+}
 
-  .dark\:hover\:bg-slate-100:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-  }
+.dark .dark\:hover\:bg-slate-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
 
-  .dark\:hover\:bg-slate-300:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-  }
+.dark .dark\:hover\:bg-slate-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
 
-  .dark\:hover\:text-slate-900:hover {
-    --tw-text-opacity: 1;
-    color: rgb(15 23 42 / var(--tw-text-opacity));
-  }
+.dark .dark\:hover\:text-slate-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
 
-  .group:hover .dark\:group-hover\:text-slate-800 {
-    --tw-text-opacity: 1;
-    color: rgb(30 41 59 / var(--tw-text-opacity));
-  }
+.dark .group:hover .dark\:group-hover\:text-slate-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {

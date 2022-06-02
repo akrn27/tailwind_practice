@@ -12,41 +12,36 @@
     />
     <title>Belajar TailwindCSS</title>
     <!-- <link rel="stylesheet" href="./style.css" /> -->
-    <style type="text/tailwindcss">
-      #toggle:checked ~ label div.toggle-circle {
-        @apply translate-x-3;
-      }
-    </style>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="./css/style.css">
     <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            spacing: {
-              13: "3.25rem",
-            },
-            fontFamily: {
-              inter: ["Inter"],
-            },
-            colors: {
-              wpu: "#bada55",
-              kopi: "#c0ffee",
-            },
-            animation: {
-              "spin-slow": "spin 3s linear infinite",
-              goyang: "goyang 1s ease-in-out infinite",
-            },
-            keyframes: {
-              goyang: {
-                "0%, 100%": { transform: "rotate(-3deg)" },
-                "50%": { transform: "rotate(3deg)" },
-              },
-            },
-          },
-        },
-      };
+      // tailwind.config = {
+      //   darkMode: "class",
+      //   theme: {
+      //     extend: {
+      //       spacing: {
+      //         13: "3.25rem",
+      //       },
+      //       fontFamily: {
+      //         inter: ["Inter"],
+      //       },
+      //       colors: {
+      //         wpu: "#bada55",
+      //         kopi: "#c0ffee",
+      //       },
+      //       animation: {
+      //         "spin-slow": "spin 3s linear infinite",
+      //         goyang: "goyang 1s ease-in-out infinite",
+      //       },
+      //       keyframes: {
+      //         goyang: {
+      //           "0%, 100%": { transform: "rotate(-3deg)" },
+      //           "50%": { transform: "rotate(3deg)" },
+      //         },
+      //       },
+      //     },
+      //   },
+      // };
     </script>
   </head>
   <body
