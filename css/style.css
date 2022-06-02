@@ -960,54 +960,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'img\/grid\/1\.jfif\'\)\] {
-  background-image: url('img/grid/1.jfif');
-}
-
-.bg-\[url\(\'img\/grid\/2\.jfif\'\)\] {
-  background-image: url('img/grid/2.jfif');
-}
-
-.bg-\[url\(\'img\/grid\/3\.jfif\'\)\] {
-  background-image: url('img/grid/3.jfif');
-}
-
-.bg-\[url\(\'img\/grid\/4\.jfif\'\)\] {
-  background-image: url('img/grid/4.jfif');
-}
-
-.bg-\[url\(\'img\/grid\/5\.jfif\'\)\] {
-  background-image: url('img/grid/5.jfif');
-}
-
-.bg-\[url\(\'img\/grid\/6\.jfif\'\)\] {
-  background-image: url('img/grid/6.jfif');
-}
-
-.bg-\[url\(\'img\/grid\/7\.jfif\'\)\] {
-  background-image: url('img/grid/7.jfif');
-}
-
-.bg-\[url\(\'img\/grid\/8\.jfif\'\)\] {
-  background-image: url('img/grid/8.jfif');
-}
-
-.bg-\[url\(\'img\/grid\/9\.jfif\'\)\] {
-  background-image: url('img/grid/9.jfif');
-}
-
-.bg-\[url\(\'img\/grid\/10\.jfif\'\)\] {
-  background-image: url('img/grid/10.jfif');
-}
-
-.bg-\[url\(\'\/img\/grid\/1\.jfif\'\)\] {
-  background-image: url('/img/grid/1.jfif');
-}
-
-.bg-\[url\(\'\.\/img\/grid\/10\.jfif\'\)\] {
-  background-image: url('./img/grid/10.jfif');
-}
-
 .from-blue-500 {
   --tw-gradient-from: #3b82f6;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(59 130 246 / 0));
@@ -1156,6 +1108,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-bold {
